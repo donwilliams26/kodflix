@@ -9,7 +9,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Welcome to Kodflix you beautiful Users 
+            Welcome to Kodflix you beautiful Suckers 
           </p>
           <a
             className="App-link"
