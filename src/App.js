@@ -6,7 +6,7 @@ import gamers from './images/gamer.jpg';
 import hacker from './images/mrrobot.jpg';
 import ender from './images/enders.jpg';
 import letscook from './images/breakingbad.jpg';
-import TvItem from './TvItem';
+import Tvitem from './tvItem';
 
 class App extends Component {
   render() {
@@ -14,14 +14,14 @@ class App extends Component {
       <div className="App">
         <br /><br /><br />
         <div className='container'>
-          <TvItem name='CASA de Papel' logo={depapel} />
-          <TvItem name='GAMER' logo={gamers} />
-          <TvItem name='Mr. ROBOT' logo={hacker} />
+          <Tvitem name='CASA de Papel' logo={depapel} />
+          <Tvitem name='GAMER' logo={gamers} />
+          <Tvitem name='Mr. ROBOT' logo={hacker} />
         </div>
         <div className='container'>
-          <TvItem name='CHAMPIONSHIP' logo={cover} />
-          <TvItem name="ENDER'S GAME" logo={ender} />
-          <TvItem name='BREAKING BAD' logo={letscook} />
+          <Tvitem name='CHAMPIONSHIP' logo={cover} />
+          <Tvitem name="ENDER'S GAME" logo={ender} />
+          <Tvitem name='BREAKING BAD' logo={letscook} />
         </div>
       </div>
     );
