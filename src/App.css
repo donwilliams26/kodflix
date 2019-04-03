@@ -5,6 +5,7 @@
 img {
   width: 100%;
 }
+
 .container {
   display: flex;
 }
@@ -12,6 +13,30 @@ img {
 .item {
   flex: 1; 
   padding: 30px;
+  border: 1px solid black;
+  position: relative;
+  
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  background-color: orange;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: .99999;
+  
+  
+}
+
+h1 {
+  font-weight: lighter;
+  color: white;
+  }
+
+.item:hover .overlay {
+  display: block;
 }
 
 @media only screen and (max-width: 600px) {
