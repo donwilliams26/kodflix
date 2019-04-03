@@ -12,34 +12,36 @@ img {
 
 .item {
   flex: 1; 
-  padding: 30px;
   border: 1px solid black;
+  padding: 30px;
   position: relative;
+  overflow: hidden;
   
 }
 
 .overlay {
-  display: none;
-  position: absolute;
-  background-color: orange;
+  transition: bottom cubic-bezier(0, -1, 0.71, 1.38) .5s;
+  position: absolute;  
+  background-color: rgb(10, 10, 10);   
   width: 100%;
-  bottom: 0;
   left: 0;
-  opacity: .99999;
-  
+  bottom: -100px;
+  opacity: 1;
   
 }
 
 h1 {
   font-weight: lighter;
-  color: white;
+  color: rgb(255, 255, 255);
   }
 
 .item:hover .overlay {
-  display: block;
+ /* display: block;*/
+  opacity: .9;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
   .container {
-    flex-direction: column  }
+    flex-direction: column;  }
 }
