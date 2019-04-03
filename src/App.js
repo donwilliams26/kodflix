@@ -6,6 +6,7 @@ import gamers from './images/gamer.jpg';
 import hacker from './images/mrrobot.jpg';
 import ender from './images/enders.jpg';
 import letscook from './images/breakingbad.jpg';
+import TvItem from './TvItem';
 
 class App extends Component {
   render() {
@@ -13,60 +14,19 @@ class App extends Component {
       <div className="App">
         <br /><br /><br />
         <div className='container'>
-          <div className='item'>
-            <img src={depapel} alt='money heist' />
-            <div className='overlay'>
-              <h1>
-                CASA de PAPEL
-              </h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={gamers} alt='gamericon' />
-            <div className='overlay'>
-              <h1>
-                GAMER
-              </h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={hacker} alt='Mr.robot' />
-            <div className='overlay'>
-              <h1>
-                Mr. ROBOT
-              </h1>
-            </div>
-          </div>
+          <TvItem name='CASA de Papel' logo={depapel} />
+          <TvItem name='GAMER' logo={gamers} />
+          <TvItem name='Mr. ROBOT' logo={hacker} />
         </div>
-        <div className='container'>      
-          <div className='item'>
-            <img src={ender} alt='enders' />
-            <div className='overlay'>
-              <h1>
-                ENDER'S GAME
-              </h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={letscook} alt='bbad' />
-            <div className='overlay'>
-              <h1>
-                BREAKING BAD
-              </h1>
-            </div>
-          </div>
-          <div className='item'>
-            <img src={cover} alt='champion' />
-            <div className='overlay'>
-              <h1>
-                CHAMPIONSHIPS
-              </h1>
-            </div>
-          </div>
+        <div className='container'>
+          <TvItem name='CHAMPIONSHIP' logo={cover} />
+          <TvItem name="ENDER'S GAME" logo={ender} />
+          <TvItem name='BREAKING BAD' logo={letscook} />
         </div>
       </div>
     );
   }
+
 }
 
-export default App;
+export default App; 
