@@ -17,20 +17,6 @@ img {
   position: relative;
   overflow: hidden;
   
-
-   /*
-          <br /><br /><br />
-          <div className='container'>
-            <Tvitem name='CASA de Papel' logo={depapel} />
-            <Tvitem name='GAMER' logo={gamers} />
-            <Tvitem name='Mr. ROBOT' logo={hacker} />
-          </div>
-          <div className='container'>
-            <Tvitem name='CHAMPIONSHIP' logo={cover} />
-            <Tvitem name="ENDER'S GAME" logo={ender} />
-            <Tvitem name='BREAKING BAD' logo={letscook} />
-          </div> */
-          
 }
 
 .overlay {
