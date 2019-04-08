@@ -1,32 +1,29 @@
 import React, { Component } from 'react';
 import './App.css';
-import cover from './images/championships.jpeg';
+/*import cover from './images/championships.jpeg';
 import depapel from './images/casa.jpg';
 import gamers from './images/gamer.jpg';
 import hacker from './images/mrrobot.jpg';
 import ender from './images/enders.jpg';
 import letscook from './images/breakingbad.jpg';
-import Tvitem from './tvItem';
+import Tvitem from './tvItem';*/
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Technologies from './Technologies';
+import Details from './Details';
+
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <br /><br /><br />
-        <div className='container'>
-          <Tvitem name='CASA de Papel' logo={depapel} />
-          <Tvitem name='GAMER' logo={gamers} />
-          <Tvitem name='Mr. ROBOT' logo={hacker} />
+      <Router>
+        <div className="App">
+          <Route exact path='/' component={Technologies} />
+          <Route exact path='/Details' component={Details} />
         </div>
-        <div className='container'>
-          <Tvitem name='CHAMPIONSHIP' logo={cover} />
-          <Tvitem name="ENDER'S GAME" logo={ender} />
-          <Tvitem name='BREAKING BAD' logo={letscook} />
-        </div>
-      </div>
+      </Router>
     );
   }
-
 }
 
 export default App; 
