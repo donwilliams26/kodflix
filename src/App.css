@@ -22,7 +22,7 @@ img {
 .overlay {
   transition: bottom cubic-bezier(0, -1, 0.71, 1.38) .5s;
   position: absolute;  
-  background-color: rgb(10, 10, 10);   
+  background-color: rgb(7, 7, 7);   
   width: 100%;
   left:0px;
   bottom: -100px;
@@ -32,7 +32,7 @@ img {
 
 h1 {
   font-weight: lighter;
-  color: black;
+  color: rgb(250, 243, 243);
   }
 
 .item:hover .overlay {
