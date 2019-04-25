@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Tvitem(props) {
     return (
-      <Link to="/details" div className='item'>
+      <Link to={`/${props.id}`} div className='item'>
         <img src={props.logo} alt={`${props.name} logo`} />
         <div className='overlay'>
           <h1>

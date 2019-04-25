@@ -11,15 +11,15 @@ export default function Technologies() {
     return (
         <div>
             <div className='container'>
-                <Tvitem name='CASA de Papel' logo={depapel} />
-                <Tvitem name='GAMER' logo={gamers} />
-                <Tvitem name='Mr. ROBOT' logo={hacker} />
+                <Tvitem id='Casa de Papel' name='CASA de Papel' logo={depapel} />
+                <Tvitem id='Gamer' name='GAMER' logo={gamers} />
+                <Tvitem id='Mr. Robot' name='Mr. ROBOT' logo={hacker} />
             </div>
 
             <div className='container'>
-                <Tvitem name='CHAMPIONSHIP' logo={cover} />
-                <Tvitem name="ENDER'S GAME" logo={ender} />
-                <Tvitem name='BREAKING BAD' logo={letscook} />
+                <Tvitem id='Championship' name='CHAMPIONSHIP' logo={cover} />
+                <Tvitem id="Ender's Game" name="ENDER'S GAME" logo={ender} />
+                <Tvitem id='Breaking Bad' name='BREAKING BAD' logo={letscook} />
 
             </div>
         </div>
