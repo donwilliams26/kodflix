@@ -19,28 +19,26 @@ img {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  
 }
 
 .overlay {
-  transition: bottom cubic-bezier(0, -1, 0.71, 1.38) .5s;
-  position: absolute;  
-  background-color: rgb(7, 7, 7);   
+  transition: bottom cubic-bezier(0, -1, 0.71, 1.38) 0.5s;
+  position: absolute;
+  background-color: rgb(252, 248, 248);
   width: 100%;
-  left:0px;
+  left: 0px;
   bottom: -100px;
   opacity: 1;
-  
 }
 
 h1 {
   font-weight: lighter;
-  color: rgb(250, 243, 243);
-  }
+  color: rgb(54, 53, 53);
+}
 
 .item:hover .overlay {
- /* display: block;*/
-  opacity: .9;
+  /* display: block;*/
+  opacity: 0.9;
   bottom: 0;
 }
 
