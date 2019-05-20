@@ -1,26 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import getTechnologies from "./technologies-get";
 
 export default class Details extends React.Component {
   constructor() {
     super();
     this.state = {
-      welcomeMessage: "Welcome to the details page, WIP :)"
+      technology: {}
     };
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        welcomeMessage: "The best is yet to come!"
-      });
-    }, 3000);
+    let technologyId = this.props.match.params.technologyId;
+    let technology = getTechnologies().find(
+      technology => technology.id === technologyId
+    );
+    this.setState({ technology });
   }
 
   render() {
     return (
       <div>
-        <h1>{this.state.welcomeMessage}</h1>
+        <h1>{this.state.technology.name}</h1>
         <Link to="/">Back to Home page</Link>
       </div>
     );
