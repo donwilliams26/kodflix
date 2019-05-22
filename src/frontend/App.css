@@ -15,20 +15,20 @@ img {
 
 .item {
   /*flex: 1;*/
-  border: 1px solid black;
   padding: 30px;
   position: relative;
+  border: 1px solid black;
   overflow: hidden;
 }
 
 .overlay {
   transition: bottom cubic-bezier(0, -1, 0.71, 1.38) 0.5s;
   position: absolute;
-  background-color: rgb(252, 248, 248);
-  width: 100%;
-  left: 0px;
   bottom: -100px;
+  left: 0px;
+  width: 100%;
   opacity: 1;
+  background-color: rgb(252, 248, 248);
 }
 
 h1 {

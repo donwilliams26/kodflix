@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
-import getTechnologies from "./technologies-get";
+import getTechnologies from "../technologies-get";
+import "./Details.css";
 
 export default class Details extends React.Component {
   constructor() {
@@ -23,20 +24,18 @@ export default class Details extends React.Component {
       return <Redirect to="/not-found" />;
     } else {
       return (
-        <div>
+        <div className="Details">
           <h1>{this.state.technology.name}</h1>
+          <div className="container">
+            <div>{this.state.technology.details}</div>
+            <img
+              src={this.state.technology.logo}
+              alt={this.state.technology.name}
+            />
+          </div>
           <Link to="/">Back to Home page</Link>
         </div>
       );
     }
   }
 }
-
-//  export default function Details() {
-//   return (
-//     <div>
-//       <h1>Welcome to the details page, WIP:) </h1>
-//       <Link to="/">Back to Home page</Link>
-//     </div>
-//   );
-// }
